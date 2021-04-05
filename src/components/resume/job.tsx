@@ -17,7 +17,12 @@ export const Job: React.FC<JobProps> = props => (
             {props.title} -{' '}
             <span className="font-weight-normal">{props.company}</span>
         </h5>
-        <p className="font-weight-light">{props.summary}</p>
+        <p className="font-weight-light">
+            <ul>
+                <li>{props.summary[0]}</li>
+                <li>{props.summary[1]}</li>
+            </ul>
+        </p>
     </React.Fragment>
 )
 

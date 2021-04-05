@@ -1,4 +1,5 @@
 import React from 'react'
+import TitleBox from '../titleBox'
 
 export interface IntroProps {
     headline?: string
@@ -7,7 +8,12 @@ export interface IntroProps {
 
 export const Intro: React.FC<IntroProps> = props => (
     <div className="pb-2 mb-5 pt-md-0">
-        <p className="lead font-weight-normal">{props.headline}</p>
+        {/* <p className="lead font-weight-normal">{props.headline}</p> */}
+        <TitleBox
+            headline={props.headline}
+            box="title-box-2"
+            titleType="title-left"
+        />
         {props.summary &&
             props.summary.map((content: string, i: number) => {
                 return (

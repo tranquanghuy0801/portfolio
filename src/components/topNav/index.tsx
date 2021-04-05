@@ -47,7 +47,7 @@ export const TopNav: React.FC<Portfolio> = props => {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             {!!props.meta.showRepoLink && (
                 <Navbar.Brand
-                    href="https://github.com/doublejosh/react-portfolio"
+                    href="https://github.com/tranquanghuy0801"
                     target="_blank"
                     className="ml-3 mt-2"
                 >

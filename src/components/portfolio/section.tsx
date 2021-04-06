@@ -5,7 +5,6 @@ import ProjectCard from './projectCard'
 import Project from '../../models/project'
 import Section from '../../models/section'
 import TitleBox from '../titleBox'
-import sampleImage from '../../img/sample.png'
 
 export const ProjectSet: React.FC<Section> = props => {
     const [modalIsOpen, setModal] = useState(false)
@@ -17,9 +16,6 @@ export const ProjectSet: React.FC<Section> = props => {
     }
 
     const images: object[] = []
-    const makePath = (image: string) => {
-        return image ? 'img/' + image : sampleImage
-    }
 
     return (
         <Container className="section-wrapper">
@@ -28,7 +24,7 @@ export const ProjectSet: React.FC<Section> = props => {
             </Row>
             <Row>
                 {props.projects.map((project: Project, i: number) => {
-                    images.push({ source: makePath(project.image) })
+                    images.push({ source: project.image })
 
                     return (
                         <Col

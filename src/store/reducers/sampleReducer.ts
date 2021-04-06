@@ -113,6 +113,13 @@ export const initState: Portfolio = {
 					summary:
 						'A student management website for organizing lessons in 4 different centres and pushing data to Accounting & CRM softwares (Xero & Zoho)',
 					image: calendarImage,
+					links: [
+						{
+							label: 'Github',
+							url:
+								'https://github.com/tranquanghuy0801/gspt-cal',
+						},
+					],
 				},
 			],
 		},

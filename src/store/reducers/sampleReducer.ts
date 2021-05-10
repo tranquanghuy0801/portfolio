@@ -2,6 +2,7 @@ import Portfolio from '../../models/portfolio'
 import calendarImage from '../../img/calendar-gspt.png'
 import billImage from '../../img/bill-splitter.png'
 import tweetImage from '../../img/tweet-analytics.png'
+import adminClient from '../../img/admin-client.png'
 
 export const initState: Portfolio = {
 	meta: {
@@ -60,15 +61,15 @@ export const initState: Portfolio = {
 		tools: [
 			{
 				name: 'Languages',
-				list: 'Javascript, HTML/CSS, Python, Java, SQL',
+				list: 'Javascript, Python, Java, SQL, HTML/CSS',
 			},
 			{
 				name: 'Front-end & Back-end',
-				list: 'Bootstrap, Tailwind CSS, Angular, React.js & Express.js, Django, MongoDB, MySQL',
+				list: 'Angular, React.js & Express.js, Django, MongoDB, PostgreSQL, Docker',
 			},
 			{
 				name: 'Software',
-				list: 'Atlassian (Bitbucket, Jira), AWS (DynamoDB, EC2, Lambda, RDS, ALB), Microsoft (Azure DevOps, MS SQL Server, Visual Studio Code), GitHub, Heroku, IntelliJ',
+				list: 'Atlassian (Bitbucket, Jira), AWS (DynamoDB, EC2, Lambda, RDS, ALB), Microsoft (Azure DevOps, MS SQL Server, Visual Studio Code), GitHub, DigitalOcean, IntelliJ',
 			},
 		],
 	},
@@ -111,13 +112,27 @@ export const initState: Portfolio = {
 					id: 'section-1-project-3',
 					title: 'GSPT Calendar',
 					summary:
-						'A student management website for organizing lessons in 4 different centres and pushing data to Accounting & CRM softwares (Xero & Zoho)',
+						'A student management website for organizing lessons in 4 different centres and integrating data with Accounting & CRM softwares (Xero & Zoho)',
 					image: calendarImage,
 					links: [
 						{
 							label: 'Github',
 							url:
 								'https://github.com/tranquanghuy0801/gspt-cal',
+						},
+					],
+				},
+				{
+					id: 'section-1-project-3',
+					title: 'Admin Panel Client',
+					summary:
+						'An open-source admin panel website of Greenstand organization to track the number of planted trees and volunteers involved.',
+					image: adminClient,
+					links: [
+						{
+							label: 'Github',
+							url:
+								'https://github.com/tranquanghuy0801/treetracker-admin-client',
 						},
 					],
 				},
